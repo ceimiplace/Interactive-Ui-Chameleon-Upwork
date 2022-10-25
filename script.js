@@ -12,7 +12,7 @@ let logo = document.querySelector(".logo");
 logo.addEventListener("click", () => {
   logo.classList.add("spin");
   let width = document.body.clientWidth;
-  console.log(width);
+
   if (width < 768) {
     navigation.classList.toggle("collapse");
   }
