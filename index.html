@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="body-container">
+      <div class="header">
+        <div class="logo-text-container">
+          <img src="./logo.png" alt="logo-img" class="logo" />
+          <h2 class="header-text">Chameleon</h2>
+        </div>
+        <nav class="navigation">
+          <a class="nav-button"><img src="./Frame.png" />Open Data Library</a>
+          <a class="nav-button">
+            <img src="./FrameCould.png" />Data Contribution</a
+          >
+          <a class="nav-button"
+            ><img src="./Frameprocess.png" /> Bacalhau COD</a
+          >
+          <a class="nav-button"><img src="./Framefolder.png" /> Data Manager</a>
+          <a class="nav-button"
+            ><img src="./CRANK.png" class="crank" /> IPFS Configuration</a
+          >
+        </nav>
+      </div>
+      <main class="main-container">
+        <div class="upper-right-box">
+          Press the Chameleon in normal and mobile layout
+        </div>
+        <div class="main-box">
+          <p class="header-text-configuration">IPFS Configuration</p>
+          <p class="body-text-configuration">
+            Before contributing topography data to Chameleon, you need to
+            configure your IPFS storage tool. The IPFS storage tool will be use
+            to store your topography data, metadata, additional files, and
+            Bacalhau COD computation result. Currently, Chameleon only supports
+            Pinata.
+          </p>
+          <form action="" class="form">
+            <div>
+              <label for="api-key" name="api-key" class="label-form"
+                >Pinata API Key</label
+              >
+              <input type="text" id="api-key" id="api-key" class="form-input" />
+            </div>
+            <div>
+              <label for="api-secret" name="api-secret" class="label-form"
+                >Pinata API Secret</label
+              >
+              <input
+                type="password"
+                id="api-secret"
+                id="api-secret"
+                class="form-input"
+              />
+            </div>
+
+            <button class="save-btn">Save</button>
+          </form>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
